@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
-    publ
+    public function index(){
+        return 'こんにちは、世界!';
+    }
 }
