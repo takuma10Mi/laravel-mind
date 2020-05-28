@@ -4,15 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 // Controllerクラスを継承する
+use App\Book;
 class HelloController extends Controller
 {
     // viewアクションを定義する。
-    public function view()
+    public function list()
     {
         $data = [
-        'msg' => 'こんにちは、世界！'
+        'records' => Book::all() 
         ];
-        return view('hello.view', $data);
+        return view('hello.list', $data);
     }
 
 }
