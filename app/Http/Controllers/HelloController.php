@@ -16,4 +16,6 @@ class HelloController extends Controller
         return view('hello.list', $data);
     }
 
+    
+
 }
