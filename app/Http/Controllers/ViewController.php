@@ -35,5 +35,11 @@ class ViewController extends Controller
         'random' => random_int(1, 5) ]);
         }
 
+    public function master(){
+        return view('view.master',[
+            'msg' => 'こんにちは',
+        ]);
+    }
+
 
 }

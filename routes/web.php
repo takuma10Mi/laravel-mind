@@ -24,3 +24,4 @@ Route::get('view/comment', 'ViewController@comment');
 Route::get('view/if', 'ViewController@if');
 Route::get('view/isset', 'ViewController@isset');
 Route::get('view/switch', 'ViewController@switch');
+Route::get('view/master', 'ViewController@master');
